@@ -1,0 +1,206 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=avg_pace"
+    />
+    <title>BMI CALCULATOR</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="black-and-white-cloud-aa07k491u4qkj5fj.jpg"
+        alt=""
+        class="bgimage"
+      />
+
+      <div class="container">
+        <div class="mheading">BMI CALCULATOR</div>
+
+        <div class="gender">
+          <div class="male selected">
+            <div>
+              <i class="bx bx-male-sign"></i>
+            </div>
+            <div class="maleheading">Male</div>
+          </div>
+
+          <div class="female">
+            <div>
+              <i class="bx bx-female-sign"></i>
+            </div>
+            <div class="femaleheading">Female</div>
+          </div>
+        </div>
+
+        <div class="block1">
+          <div>
+            <div class="heading">Name:</div>
+            <input
+              type="text"
+              name="name"
+              id="username"
+              placeholder="Enter your name"
+              class="inputfield"
+            />
+          </div>
+          <div>
+            <div class="heading">Age:</div>
+            <input
+              type="number"
+              name="age"
+              id="usernage"
+              placeholder="Enter your age"
+              class="inputfield"
+            />
+          </div>
+        </div>
+
+        <div class="block2">
+          <div class="height">
+            <div class="heading1">Height:</div>
+            <div class="boxwithUnit">
+              <input
+                type="text"
+                name="height"
+                id="userheight"
+                placeholder="Enter your height"
+                class="inputfield2"
+              />
+              <div class="select">
+                <select id="height-unit" class="inputfield1">
+                  <option value="cm">cm</option>
+                  <option value="m">m</option>
+                  <option value="ft-in">Ft&in</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="weight">
+            <div class="heading1">Weight:</div>
+            <div class="boxwithUnit">
+            <input
+              type="number"
+              name="weight"
+              id="userweight"
+              placeholder="Enter your weight"
+              class="inputfield2"
+            />
+            <div class="select">
+              <select id="weight-unit" class="inputfield1">
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+              </select>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <button>
+          <div class="check">
+            Check Results <i class='bx bx-revision'></i>
+          </div>
+        </button>
+
+        <div class="con2" id="con2">
+          <div class="userName">
+            <div class="userName">Hello, <span id="name"></span>!</div>
+          </div>
+
+          <div class="result1">
+            <div class="resheading">Your BMI is:</div>
+
+            <div class="res1" id="bmi"></div>
+          </div>
+
+          <div class="result2">
+            <div class="resheading">Category:</div>
+            <div class="res2" id="category"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec2">
+      <div class="edu">Educational Content</div>
+
+      <div class="cont3">
+        <div class="eduContent">
+          <div class="q">
+            <div class="question">
+              Q1. What is BMI and how is it calculated?
+            </div>
+            <div class="answer">
+              Answer: BMI (Body Mass Index) is a simple calculation using a
+              person's weight and height.
+              <div class="answer">
+                The formula is:
+                <div class="formula">
+                  <img
+                    src="bmi-calculator-en-scaled-1-1024x543-removebg-preview.png"
+                    alt=""
+                  />
+                </div>
+
+                It is used to classify individuals into categories like
+                underweight, normal weight, overweight, or obese.
+              </div>
+            </div>
+          </div>
+          <div class="q">
+            <div class="question">Q2. Why is BMI important?</div>
+            <div class="answer">
+              Answer: BMI is a useful indicator of overall health and can help
+              identify individuals at risk of developing conditions such as
+              heart disease, diabetes, or hypertension. However, it should be
+              considered alongside other health assessments.
+            </div>
+          </div>
+
+          <div class="q">
+            <div class="question">Q3. Is BMI a perfect measure of health?</div>
+            <div class="answer">
+              Answer: No, BMI has limitations. It doesn’t account for muscle
+              mass, bone density, or fat distribution. For example, athletes may
+              have a high BMI due to muscle mass rather than excess body fat.
+            </div>
+          </div>
+
+          <div class="q">
+            <div class="question">
+              Q4. How does BMI differ for different populations?
+            </div>
+            <div class="answer">
+              Answer: BMI may not be equally accurate across all populations.
+              For example, Asian populations may be at risk of health conditions
+              at lower BMI thresholds, while athletes may need additional
+              methods to assess body composition.
+            </div>
+          </div>
+        </div>
+
+        <div class="eduimg">
+          <div class="img1">
+            <img src="Bio_BMI-chart_blog.png" alt="" />
+          </div>
+          <div class="line1"></div>
+          <div class="img2"><img src="BMI.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
